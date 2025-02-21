@@ -9,3 +9,33 @@
 ✦ button__text — для обозначения текстового элемента внутри кнопки
 
 */
+
+@keyframes button-shadow {
+    from {
+        box-shadow: 0 0 0 currentColor;
+    }
+
+    to {
+        box-shadow: 2px 2px 0 currentColor;
+    }
+}
+
+@keyframes big-heart {
+    from {
+        width: 38px;
+    }
+
+    50% {
+        width: 42px;
+        --like-button-sparks: rgb(255 37 0 / 1);
+    }
+
+    75% {
+        width: 38px;
+        --like-button-sparks: rgb(255 37 0 / 1);
+    }
+
+    to {
+        --like-button-sparks: rgb(255 37 0 / 0);
+    }
+}
