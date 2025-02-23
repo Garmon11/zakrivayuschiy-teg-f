@@ -193,9 +193,15 @@
   transform: scaleX(1);
 }
 
-.card-like-button:focus,
+/* .card-like-button:focus,
 .save-dialog-button-container:focus,
 .modal-close-button:focus {
+  outline: none;
+  box-shadow: 2px 2px 0 currentColor;
+  transition: 0.3s ease;
+} */
+
+.button-focus:focus {
   outline: none;
   box-shadow: 2px 2px 0 currentColor;
   transition: 0.3s ease;
