@@ -35,6 +35,7 @@ input {
   color: currentColor;
   font-family: inherit;
   font-size: inherit;
+  border: var(--border-width) var(--border-line) var(--border-color);
 }
 
 ul,

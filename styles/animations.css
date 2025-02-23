@@ -2,26 +2,25 @@
 
 Будьте внимательны! Для корректной работы скриптов на этом сайте нужно, чтобы в HTML некоторые классы были названы особым образом:
 ✦ like-icon — для svg-иконки анимированного сердца
-✦ card__like-button — для кнопки Like рядом с иконкой
-✦ card__icon-button — для кнопки, оборачивающей иконку
-✦ card__icon-button — для кнопки, оборачивающей иконку
+✦ card-like-button — для кнопки Like рядом с иконкой
+✦ card-icon-button — для кнопки, оборачивающей иконку
+✦ card-icon-button — для кнопки, оборачивающей иконку
 ✦ is-liked — для обозначения состояния лайкнутой иконки в виде сердца
-✦ button__text — для обозначения текстового элемента внутри кнопки
+✦ button-text — для обозначения текстового элемента внутри кнопки
 
 */
-
-@keyframes button-shadow {
+@keyframes fadeIn {
     from {
-        box-shadow: 0 0 0 currentColor;
+        scale: 1;
     }
-
+    50% {
+        scale: 1.25;
+        --like-button-sparks: rgb(255 37 0 / 1);
+    }
     to {
-        box-shadow: 2px 2px 0 currentColor;
+        scale: 1;
     }
-}
-
-@keyframes big-heart {
-    from {
+    /* from {
         width: 38px;
     }
 
@@ -37,5 +36,5 @@
 
     to {
         --like-button-sparks: rgb(255 37 0 / 0);
-    }
+    } */
 }
