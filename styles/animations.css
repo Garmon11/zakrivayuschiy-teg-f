@@ -15,26 +15,17 @@
     }
     50% {
         scale: 1.25;
-        --like-button-sparks: rgb(255 37 0 / 1);
     }
     to {
         scale: 1;
     }
-    /* from {
-        width: 38px;
-    }
+}
 
-    50% {
-        width: 42px;
-        --like-button-sparks: rgb(255 37 0 / 1);
-    }
-
-    75% {
-        width: 38px;
-        --like-button-sparks: rgb(255 37 0 / 1);
-    }
-
-    to {
-        --like-button-sparks: rgb(255 37 0 / 0);
-    } */
+@keyframes sparks { 
+    from { 
+        --like-button-sparks: rgb(255 37 0 / 0); 
+    } 
+    to { 
+        --like-button-sparks: rgb(255 37 0 / 1); 
+    } 
 }
